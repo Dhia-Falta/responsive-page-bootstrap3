@@ -1,0 +1,562 @@
+/* Global rouls */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Quicksand', cursive, sans-serif;
+}
+
+/* start navbar */
+.navbar-inverse {
+	background-color: transparent;
+ 	border-color: transparent;
+ 	padding: 10px 0px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 20px;
+}
+.navbar-inverse .navbar-brand {
+	color: #fdcd00;
+    font-size: 40px;
+    font-weight: bold;
+}
+.scrolled {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* start header */
+.header {
+	background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(../images/action-america.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover; 
+	-o-background-size: cover;
+	background-position: center bottom;
+	background-size: cover;
+	min-height: 100vh;
+	position: relative;
+	color: #FFF;
+}
+
+.header .vh-center{
+	margin-top: 25vh;
+}
+@media (max-width: 768px){
+	.header .vh-center{
+		margin-top: 100px;
+	}
+}
+.header h1 {
+	font-weight: bold;
+	font-size: 55px;
+}
+@media (max-width: 768px){
+	.header h1 {
+		font-size: 38px;
+	}
+}
+.header h1 span {
+	color: #fdcd00;
+}
+
+.header h1 ~ .lead {
+	font-size: 24px;
+}
+@media (max-width: 768px){
+	.header h1 ~ .lead {
+		font-size: 19px;
+	}
+}
+.header h1 ~ .lead:after{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 70px;
+	background-color: #fdcd00;
+	margin: 25px 0;
+}
+@media (max-width: 768px){
+	.header h1 ~ .lead:after{
+		margin: 15px 0;
+	}
+}
+.header button {
+	background-color: transparent;
+	padding: 8px 24px;
+	border-radius: 35px;
+	border: 2px solid #FFF;
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 18px;
+}
+@media (max-width: 768px){
+	.header button {
+		margin-top: 12px;
+	}
+}
+.header form {
+	width: 90%;
+	background-color: #FFF;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+.header form h2{
+	background-color: #F5F5F5;
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 15px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.header form h2 span{
+	color: #fdcd00;
+}
+.header form .form-control{
+	border:none;
+	box-shadow: none;
+	border-bottom: 2px solid #EEE;
+	width: 85%;
+	margin: 0px auto 35px;
+}
+.header form .form-control::placeholder{
+	font-weight: bold;
+	font-size: 16px;
+}
+.header form input[type="submit"]{
+	background-color: #fdcd00;
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 0px;
+	padding: 10px;
+}
+
+/* satrt social */
+.social{
+	padding: 10px;
+	box-shadow: -2px -5px 13px;
+}
+.social i {
+	color: #CCC;
+	margin: 20px 15px;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.social .fa-facebook:hover{
+	color: #3b5998;
+}
+.social .fa-twitter:hover{
+	color: #1da1f2;
+}
+.social .fa-google-plus:hover{
+	color: #dd4b39;
+}
+.social .fa-pinterest:hover{
+	color: #bd081c;
+}
+.social .fa-instagram:hover{
+	color: #5851db;
+}
+.social .fa-stumbleupon:hover{
+	color: #eb4924;
+}
+.social .fa-rss:hover{
+	color: #f26522;
+}
+.social h4 {
+font-weight: bold;
+margin-bottom: 5px;
+}
+.social p {
+	color: #888;
+	line-height: 1.4;
+}
+
+/* start tabs-section */
+.tabs-section{
+	padding-top: 60px;
+	background-color: #F5F5F5;
+}
+@media (max-width: 768px){
+	.tabs-section ul{
+		text-align:inherit;
+	}
+}
+.tabs-section .tab-switcher li{
+	background-color: #333;
+	color: #FFF;
+	width: 120px;
+    height: 90px;
+	line-height: 90px;
+	border-bottom: 1px solid #EEE;
+	font-size: 16px;
+	cursor: pointer;
+}
+@media (max-width: 768px){
+	.tabs-section .tab-switcher li{
+		display: inline-block;
+		width: 100px;
+	    height: 70px;
+		line-height: 70px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+}
+.tabs-section .tab-switcher .selected,
+.tabs-section .tab-switcher li:hover{
+	background-color: #fdcd00;
+	color: inherit;
+	font-weight: 600;
+}
+
+.tabs-section .tabs-content h3{
+	margin-top: 0;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.tabs-section .tabs-content .lead{
+	line-height: 1.6;
+	color: #7E7E7E;
+	font-size: 18px;
+}
+
+.tabs-section .tabs-content button{
+	background-color: #fdcd00;
+	padding: 8px 24px;
+	border-radius: 35px;
+	font-weight: 600;
+}
+.tabs-section .tabs-content div:not(.tab-one){
+	display: none;
+}
+.tabs-section .image{
+	overflow: hidden;
+}
+.tabs-section .image img{
+	width: 100%;
+}
+
+
+/* start sublist */
+.sublist {
+	padding: 80px 0 20px 0;
+}
+.sublist .image{
+	padding: 50px 0;
+}
+.sublist .image img {
+	border-radius: 10px;
+    box-shadow: 0px 2px 15px 0 rgba(32, 33, 36, 0.87);
+}
+.sublist .sub-head{
+	font-weight: bold;
+}
+.sublist .sub-desc {
+	line-height: 1.6;
+	color: #777;
+	margin-bottom: 30px;
+}
+.sublist .sub-icons{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.sublist .sub-icons i{
+	width: 52px;
+    height: 52px;
+    line-height: 49px;
+	text-align: center;
+	color: #fdcd00;
+	border: 2px solid #fdcd00;
+	border-radius: 50%;
+	margin-right: 22px;
+	margin-top: 16px;
+}
+.sublist .sub-icons .text-info{
+	width: calc(100% - 77px);
+}
+.sublist .sub-icons .text-info h4{
+	font-weight: bold;
+	color: initial;
+}
+
+/* start standerd */
+.standerd {
+	padding: 50px 0 50px 0;
+	background-color: #F5F5F5;
+}
+.standerd .image img {
+	border-radius: 10px;
+    box-shadow: 0px 2px 15px 0 rgba(32, 33, 36, 0.87);
+}
+.standerd .sub-head{
+	font-weight: bold;
+}
+.standerd .sub-desc {
+	line-height: 1.6;
+	color: #777;
+	margin-bottom: 30px;
+}
+
+/* start awesome section */
+.awesome-sec {
+	padding: 50px 0 50px 0;
+}
+
+.awesome-sec .awesome-head {
+	font-weight: bold;
+}
+.awesome-sec .awesome-desc{
+	margin-bottom: 65px;
+	color: #777;
+}
+.awesome-sec i{
+	width: 73px;
+    height: 73px;
+    line-height: 69px;
+	text-align: center;
+	color: #fdcd00;
+	border: 3px solid #fdcd00;
+	border-radius: 50%;
+}
+.awesome-sec h4{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+.awesome-sec .awesome-parag{
+	color: #777;
+}
+
+/* start awesome section */
+.pricing {
+	padding: 50px 0 50px 0;
+	background-color: #F5F5F5;
+}
+
+.pricing .pricing-head {
+	font-weight: bold;
+}
+.pricing .pricing-desc{
+	margin-bottom: 65px;
+	color: #777;
+}
+.pricing .pricing-box{
+	background-color: #FFF;
+	border-radius: 28px;
+	overflow: hidden;
+}
+.pricing .pricing-box h3{
+	background-color: #333;
+	color: #FFF;
+	padding: 15px 0;
+	margin: 0;
+	font-weight: bold;
+	border-bottom: 1px solid #F5F5F5;
+}
+.pricing .pricing-box .pricing-options{
+	background-color: #333;
+	padding: 10px 0;
+}
+.pricing .pricing-options{
+	border-bottom: 5px solid #fdcd00;
+}
+.pricing .pricing-options .price{
+	font-size: 70px;
+	color: #FFF;
+	display: block;
+	font-weight: bold;
+}
+.pricing .pricing-options .price .usd{
+	font-size: 40px;
+}
+.pricing .pricing-options .period{
+	color: #adadad;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+}
+.pricing .pricing-box .most-p{
+	background-color: #fdcd00;
+	color: #333;
+	padding: 5px 10px 10px;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.pricing .pricing-categorie li{
+	padding: 10px;
+	border-bottom: 1px solid #F5F5F5;
+	color: #8C8C8C; 
+
+}
+.pricing .basic, .pricing .enterprise{
+	margin-top: 35px;
+}
+
+/* start testimonials section */
+.testimonials {
+	padding: 50px 0;
+}
+.testimonials .tes{
+	margin-bottom: 50px;
+}
+.testimonials .client-say{
+	background-color: #F5F5F5;
+	color: #8E8F93;
+	padding: 25px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.testimonials .client-say:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px;
+	border-color: #F5F5F5 transparent transparent;
+	position: absolute;
+	bottom: -28px;
+	left: 20px;
+}
+.testimonials .media-left img{
+	width: 70px; 
+	height: 70px; 
+	border-radius: 50%;
+}
+.testimonials .media-body .media-heading{
+	font-weight: bold;
+}
+
+/* satrt stylish */
+.stylish{
+	padding: 50px 0;
+	background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(../images/action-america.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover; 
+	-o-background-size: cover;
+	background-position: center bottom;
+	background-size: cover;
+	min-height: 320px;
+	position: relative;
+	color: #FFF;
+}
+
+.stylish button {
+	margin: auto;
+	display: block;
+	background-color: transparent;
+	padding: 8px 24px;
+	border-radius: 35px;
+	border: 2px solid #FFF;
+	margin-top: 30px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+/* satrt contact */
+.contact {
+	padding: 50px 0;
+}
+.contact .contact-des{
+	margin-bottom: 65px;
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"]{
+	margin-bottom: 20px;
+}
+.contact .contact-form textarea{
+	height: 178px;
+	margin-bottom: 25px;
+}
+.contact .contact-form textarea::placeholder{
+	font-size: 18px;
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea{
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	border-bottom: 2px solid #dcdcdc;
+}
+
+.contact .contact-form button{
+	background-color: #fdcd00;
+	padding: 8px 24px;
+	border-radius: 35px;
+	font-weight: 600;
+}
+
+/* start footer */
+footer{
+	background-color: black;
+	padding: 40px 0;
+}
+.social-footer{
+	margin-bottom: 10px;
+}
+.social-footer i {
+	color: #CCC;
+	margin: 20px 15px;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.social-footer .fa-facebook:hover{
+	color: #3b5998;
+}
+.social-footer .fa-twitter:hover{
+	color: #1da1f2;
+}
+.social-footer .fa-google-plus:hover{
+	color: #dd4b39;
+}
+.social-footer .fa-pinterest:hover{
+	color: #bd081c;
+}
+.social-footer .fa-instagram:hover{
+	color: #5851db;
+}
+.social-footer .fa-stumbleupon:hover{
+	color: #eb4924;
+}
+.social-footer .fa-rss:hover{
+	color: #f26522;
+}
+
+footer .rights{
+	font-size: 16px;
+	font-weight: 600;
+	color: #fdcd00;
+}
+/* My Framwork */
+.uppercase{
+	text-transform: uppercase;
+}
+.head-border:after{
+	content: '';
+	display: block;
+	background-color: #fdcd00;
+	height: 3px;
+	width: 70px;
+	margin: 25px 0;
+}
+.head-border-center:after{
+	content: '';
+	display: block;
+	background-color: #fdcd00;
+	height: 3px;
+	width: 70px;
+	margin: 20px auto;
+}
+
+/* start media */
+@media (max-width: 768px){
+	.navbar-inverse {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
